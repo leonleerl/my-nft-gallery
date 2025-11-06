@@ -6,7 +6,7 @@ import { NFTDetail } from '@/components/nft/NFTDetail'
 import { ViewToggle } from '@/components/nft/ViewToggle'
 import { ConnectButton } from '@/components/wallet/ConnectButton'
 import { useAccount } from 'wagmi'
-import { Sparkles, RefreshCw } from 'lucide-react'
+import { Sparkles, RefreshCw, Link } from 'lucide-react'
 import { useNFTStore } from '@/stores/nftStore'
 
 export default function GalleryPage() {
@@ -32,7 +32,14 @@ export default function GalleryPage() {
             </h1>
           </div>
           
-          <ConnectButton />
+          <div className="flex items-center gap-3">
+            <Link href="/mint">
+              <button className="btn-primary">
+                Mint NFT
+              </button>
+            </Link>
+            <ConnectButton />
+          </div>
         </header>
 
         {/* 未连接钱包状态 */}

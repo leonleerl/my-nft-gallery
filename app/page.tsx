@@ -25,6 +25,11 @@ export default function Home() {
               View Gallery
             </span>
           </Link>
+          <Link href="/mint">
+            <button className="btn-primary">
+              Mint NFT
+            </button>
+          </Link>
         </div>
 
           <div className="inline-flex items-center gap-2 mb-6">
