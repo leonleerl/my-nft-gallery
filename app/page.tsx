@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import { Sparkles, Wallet, Image as ImageIcon, Grid3x3 } from "lucide-react";
 import { ConnectButton } from "@/components/wallet/ConnectButton";
 import { WalletInfo } from "@/components/wallet/WalletInfo";
@@ -15,9 +15,17 @@ export default function Home() {
       <div className="container-custom py-16">
         {/* Header with Connect Button */}
         <header className="text-center mb-20">
-          <div className="flex justify-end mb-8">
-            <ConnectButton />
-          </div>
+        <div className="flex gap-4 justify-center mt-8">
+          <ConnectButton />
+          <Link 
+            href="/gallery"
+            className="btn-secondary inline-flex items-center justify-center"
+          >
+            <span className="flex items-center gap-2">
+              View Gallery
+            </span>
+          </Link>
+        </div>
 
           <div className="inline-flex items-center gap-2 mb-6">
             <Sparkles className="w-8 h-8 text-purple-400 animate-pulse" />

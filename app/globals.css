@@ -186,3 +186,42 @@ body {
   @apply bg-purple-500/20 text-purple-300;
   @apply border border-purple-500/30;
 }
+
+/* NFT 网格布局 */
+.nft-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}
+
+/* NFT 卡片样式 */
+.nft-card {
+  @apply rounded-2xl overflow-hidden;
+  @apply transition-all duration-300;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 容器样式 */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* 玻璃效果增强版 */
+.glass-strong {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 悬浮效果 */
+.hover-lift {
+  @apply transition-transform duration-300;
+  @apply hover:-translate-y-2;
+}
+
+/* 悬浮发光效果 */
+.hover-glow {
+  @apply hover:shadow-2xl hover:shadow-purple-500/20;
+}
